@@ -33,8 +33,8 @@ export class Professional {
     }
 
 // metotos
-public printProfessional(){
-    console.log("NOMBRE: " + this.name + "\n" + "EDAD: " + this.age + "\n" + "GENERO: " + this.genre + "\n" + "PESO: " +this.weigth + "\n" + "ALTURA: " + this.height + "\n" +
+public printProfessional():string{
+    return ("NOMBRE: " + this.name + "\n" + "EDAD: " + this.age + "\n" + "GENERO: " + this.genre + "\n" + "PESO: " +this.weigth + "\n" + "ALTURA: " + this.height + "\n" +
     "COLOR DE PELO: " + this.hairColor + "\n" + "COLOR DE OJOS: " + this.eyeColor + "\n" + "RAZA: " + this.race + "\n" + "ESTA RETIRADO: " + this.isRetired + "\n" +
     "NACIONALIDAD: "  + this.nationally + "\n" + "OSCARS: " + this.oscarsNumbers + "\n" + "PROFESION: " + this.profession + "\n" );
     }

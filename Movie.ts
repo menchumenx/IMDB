@@ -26,7 +26,15 @@ export class Movie
 
     showData()
     {
-        console.log(this);
+        let actores:string = ""
+        for (let i=0; i<this.actors.length; i++)
+        {
+            actores += this.actors[i].printProfessional()
+        }
+
+        console.log(`Título: ${this.title} \n Año de estreno: ${this.releaseYear} \n Actores: \n ${actores} \n Nacionalidad: ${this.nationality} \n Director: ${this.director} 
+            \n Escritor: ${this.writer} \n Idioma: ${this.language} \n Plataforma: ${this.platform} \n ¿Es de Marvel?: ${this.isMCU}\n Nombre personaje principal: ${this.mainCharacterName}
+            \n Productor: ${this.producer}\n Distribuidor: ${this.distributor} \n Género: ${this.genre} \n`);
     }
 
 
