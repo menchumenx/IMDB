@@ -25,16 +25,18 @@ export class Movie
     }
 
     showData()
-    {
-        let actores:string = ""
+    {  
+        let director:string = this.director.printProfessional();
+        let escritor:string = this.writer.printProfessional();
+        let actores:string = "";
         for (let i=0; i<this.actors.length; i++)
         {
             actores += this.actors[i].printProfessional()
         }
 
-        console.log(`Título: ${this.title} \n Año de estreno: ${this.releaseYear} \n Actores: \n ${actores} \n Nacionalidad: ${this.nationality} \n Director: ${this.director} 
-            \n Escritor: ${this.writer} \n Idioma: ${this.language} \n Plataforma: ${this.platform} \n ¿Es de Marvel?: ${this.isMCU}\n Nombre personaje principal: ${this.mainCharacterName}
-            \n Productor: ${this.producer}\n Distribuidor: ${this.distributor} \n Género: ${this.genre} \n`);
+        console.log(`TÍTULO: ${this.title} \n \nAÑO DE ESTRENO: ${this.releaseYear} \n \nActores: \n${actores} \n \nNACIONALIDAD: ${this.nationality} \nDIRECTOR: ${director} 
+            \nESCRITOR: ${escritor} \nIDIOMA: ${this.language} \nPLATAFORMA: ${this.platform} \n¿ES DE MARVEL?: ${this.isMCU}\nPERSONAJE PRINCIPAL: ${this.mainCharacterName}
+            \nPRODUCTOR: ${this.producer}\nDISTRIBUIDOR: ${this.distributor}\nGÉNERO: ${this.genre}\n \n \n `);
     }
 
 
