@@ -74,6 +74,7 @@ let peliculas:Movie[]=[movie1,movie2, movie3]
 
 let imdb1:Imdb= new Imdb (peliculas);
 
+
 imdb1.mostrarMovies(); 
 
 const fs = require('fs');
@@ -81,3 +82,8 @@ const fs = require('fs');
 const content =JSON.stringify(imdb1);
 
 fs.writeFileSync('./imdbBBDD.json', JSON.stringify(imdb1));
+console.log(JSON.parse(fs.readFileSync('./imdbBBDD.json')));
+
+imdb1.escribirEnFicheroJSON("imbdJSON.json")
+
+console.log(imdb1.obtenerInstanciaIMDB("imbdJSON.json"));
