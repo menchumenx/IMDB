@@ -8,4 +8,12 @@ export class Imdb
     {
         this.peliculas=peliculas;
     }
+
+mostrarMovies(){
+    let peliculas:string=""
+    for (let i=0; i<this.peliculas.length; i++)
+        {
+            peliculas+=this.peliculas[i].showData();
+        }
+    }
 }
