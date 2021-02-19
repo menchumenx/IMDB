@@ -87,3 +87,4 @@ console.log(JSON.parse(fs.readFileSync('./imdbBBDD.json')));
 imdb1.escribirEnFicheroJSON("imbdJSON.json")
 
 console.log(imdb1.obtenerInstanciaIMDB("imbdJSON.json"));
+

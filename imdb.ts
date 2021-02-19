@@ -24,9 +24,9 @@ escribirEnFicheroJSON(nombreFichero:string)
 
 obtenerInstanciaIMDB(nombreFichero:string):Imdb
 {
-    let instancia:Imdb;
+    let instancia:Imdb = new Imdb([]);
     const fs = require('fs')
-    instancia = JSON.parse(fs.readFileSync(nombreFichero));
+    instancia.peliculas = JSON.parse(fs.readFileSync(nombreFichero)).peliculas;
     return instancia;
 }
 
